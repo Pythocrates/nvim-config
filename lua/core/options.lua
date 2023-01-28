@@ -17,7 +17,7 @@ if utils.isNotEmpty(settings.grepprg) then
 end
 
 o.backup = false -- creates a backup file
-o.clipboard = "unnamedplus" -- keep in sync with the system clipboard
+o.clipboard = "unnamedplus" -- keep in sync with the system clipboard, requires xclip tool
 o.completeopt = "menu,menuone,noselect" -- A comma separated list of options for Insert mode completion
 o.conceallevel = 0 -- so that `` is visible in markdown files
 o.confirm = true -- confirm to save changes before exiting modified buffer
@@ -36,10 +36,10 @@ o.number = settings.number
 o.pumblend = 10 -- Popup blend
 o.pumheight = 10 -- Maximum number of entries in a popup
 o.relativenumber = settings.relative_number
-o.scrolloff = 3 -- Minimal number of screen lines to keep above and below the cursor
+o.scrolloff = 8 -- Minimal number of screen lines to keep above and below the cursor
 o.sessionoptions = { "buffers", "curdir", "tabpages", "winsize" }
 o.shiftround = true -- Round indent
-o.shiftwidth = 2 -- the number of spaces inserted for each indentation
+o.shiftwidth = 4 -- the number of spaces inserted for each indentation
 o.shortmess = o.shortmess + "c" -- prevent "pattern not found" messages
 o.showmode = false -- we don't need to see things like -- INSERT -- anymore
 o.showtabline = settings.showtabline
@@ -50,7 +50,7 @@ o.smartindent = true -- Insert indents automatically
 o.splitbelow = true -- force all horizontal splits to go below current window
 o.splitright = true -- force all vertical splits to go to the right of current window
 o.swapfile = true -- enable/disable swap file creation
-o.tabstop = 2 -- how many columns a tab counts for
+o.tabstop = 4 -- how many columns a tab counts for
 o.termguicolors = true -- set term gui true colors (most terminals support this)
 o.timeoutlen = 400 -- time to wait for a mapped sequence to complete (in milliseconds)
 o.ttimeoutlen = 0 -- Time in milliseconds to wait for a key code sequence to complete

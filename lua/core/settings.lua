@@ -15,7 +15,7 @@ M.mouse = "" -- "nv"
 -- set relative numbered lines
 M.relative_number = false
 -- always show tabs; 0 never, 1 only if at least two tab pages, 2 always
-M.showtabline = 1
+M.showtabline = 2
 -- enable or disable listchars
 M.list = false
 -- which list chars to schow
