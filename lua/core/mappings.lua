@@ -67,6 +67,8 @@ wk.register({
     name = "Files",
     b = { "<cmd>Telescope file_browser grouped=true<cr>", "File browser" },
     f = { "<cmd>" .. require("core.utils.functions").telescope_find_files() .. "<cr>", "Find File" },
+    g = { "<cmd>Telescope live_grep<cr>", "Live grep" },
+    G = { "<cmd>lua require('telescope.builtin').live_grep({default_text=vim.fn.expand('<cword>')})<cr>", "Live grep current word" },
     p = { "<cmd>Neotree reveal toggle<cr>", "Toggle Filetree" },
     r = { "<cmd>Telescope oldfiles<cr>", "Open Recent File" },
     s = { "<cmd>w<cr>", "Save Buffer" },

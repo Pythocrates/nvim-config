@@ -54,6 +54,9 @@ local M = {
           ignore_current_buffer = true,
           sort_lastused = true,
         },
+        live_grep = {
+          only_sort_text = true,
+        },
         -- find_command = { "fd", "--hidden", "--type", "file", "--follow", "--strip-cwd-prefix" },
         -- find_command = { "rg", "--files", "--hidden", "--glob", "!.git/*" },
       },
@@ -76,7 +79,7 @@ local M = {
           i = {
             -- Close on first esc instead of going to normal mode
             -- https://github.com/nvim-telescope/telescope.nvim/blob/master/lua/telescope/mappings.lua
-            ["<esc>"] = actions.close,
+            -- ["<esc>"] = actions.close,
             ["<C-j>"] = actions.move_selection_next,
             ["<PageUp>"] = actions.results_scrolling_up,
             ["<PageDown>"] = actions.results_scrolling_down,
@@ -104,8 +107,8 @@ local M = {
         initial_mode = "insert",
         scroll_strategy = "cycle",
         selection_strategy = "reset",
-        sorting_strategy = "descending",
-        layout_strategy = "vertical",
+        sorting_strategy = "ascending",
+        layout_strategy = "horizontal",
         layout_config = {
           width = 0.95,
           height = 0.85,
