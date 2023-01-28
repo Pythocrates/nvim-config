@@ -22,6 +22,22 @@ elseif settings.theme == "tokyonight" then
       require("core.plugins.themes.tokyonight")
     end,
   }
+elseif settings.theme == "solarized-light" then
+  return {
+    "ishan9299/nvim-solarized-lua",
+    name = "solarized-light",
+    config = function()
+      require("core.plugins.themes.solarized-light")
+    end,
+  }
+elseif settings.theme == "solarized-dark" then
+  return {
+    "ishan9299/nvim-solarized-lua",
+    name = "solarized-dark",
+    config = function()
+      require("core.plugins.themes.solarized-dark")
+    end,
+  }
 else
   return {
     "catppuccin/nvim",
