@@ -10,9 +10,9 @@ M.grepprg = "rg --hidden --vimgrep --smart-case --"
 -- set numbered lines
 M.number = true
 -- enable mouse see :h mouse
-M.mouse = "nv"
+M.mouse = "" -- "nv"
 -- set relative numbered lines
-M.relative_number = true
+M.relative_number = false
 -- always show tabs; 0 never, 1 only if at least two tab pages, 2 always
 M.showtabline = 1
 -- enable or disable listchars
