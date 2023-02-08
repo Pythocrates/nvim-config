@@ -77,7 +77,7 @@ M.mason_tool_installer_ensure_installed = {
   "terraform-ls",
   "yaml-language-server",
   -- Formatter
-  "black",
+  -- "black",
   "prettier",
   "stylua",
   "shfmt",
