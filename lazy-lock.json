@@ -78,6 +78,7 @@
   "todo-comments.nvim": { "branch": "main", "commit": "74c7d28cb50b0713c881ef69bcb6cdd77d8907d1" },
   "urlview.nvim": { "branch": "main", "commit": "6a2f1ae05ba036ca1e9c505f4d58b9a188ef51bd" },
   "vim-fugitive": { "branch": "master", "commit": "2febbe1f00be04f16daa6464cb39214a8566ec4b" },
+  "vim-visual-multi": { "branch": "master", "commit": "724bd53adfbaf32e129b001658b45d4c5c29ca1a" },
   "vimtex": { "branch": "master", "commit": "b8607084b324ab0c98892ca20f78433904aecef5" },
   "vimwiki": { "branch": "dev", "commit": "fea8bee382b2051b0137fd2cacf0862823ee69b3" },
   "which-key.nvim": { "branch": "main", "commit": "684e96c5e8477f1ee9b3f2e9a12d802fd12c5531" },
