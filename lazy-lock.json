@@ -66,6 +66,7 @@
   "spread.nvim": { "branch": "main", "commit": "ced38ee20f76375e29a86f754583b6871c92d13c" },
   "starlite-nvim": { "branch": "main", "commit": "bc204069859e4e85a057b92ac61700f3f46c3e41" },
   "symbols-outline.nvim": { "branch": "master", "commit": "512791925d57a61c545bc303356e8a8f7869763c" },
+  "tagbar": { "branch": "master", "commit": "af3ce7c3cec81f2852bdb0a0651d2485fcd01214" },
   "telescope-file-browser.nvim": { "branch": "master", "commit": "304508fb7bea78e3c0eeddd88c4837501e403ae8" },
   "telescope-heading.nvim": { "branch": "main", "commit": "b1969c1b1b3de52c45b4c440e0784c33b5814954" },
   "telescope-makefile": { "branch": "master", "commit": "23239f86ed0b443272c03848d23059f9cbe29197" },
