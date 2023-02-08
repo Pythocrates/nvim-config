@@ -7,6 +7,7 @@ local M = {
     "nvim-telescope/telescope-symbols.nvim",
     "nvim-telescope/telescope-file-browser.nvim",
     "nvim-telescope/telescope-ui-select.nvim",
+    "nvim-telescope/telescope-live-grep-args.nvim",
     "ptethng/telescope-makefile",
   },
   config = function()
@@ -15,6 +16,7 @@ local M = {
     local actions = require("telescope.actions")
     local action_layout = require("telescope.actions.layout")
     local fb_actions = require("telescope").extensions.file_browser.actions
+    local lga_actions = require("telescope-live-grep-args.actions")
     local icons = require("core.utils.icons")
     telescope.setup({
       extensions = {
@@ -42,6 +44,15 @@ local M = {
               ["<c-p>"] = fb_actions.move,
               ["<c-y>"] = fb_actions.copy,
               ["<c-a>"] = fb_actions.select_all,
+            },
+          },
+        },
+        live_grep_args = {
+          auto_quoting = true,
+          mappings = {
+            i = {
+              ["<C-k>"] = lga_actions.quote_prompt(),
+              ["<C-i>"] = lga_actions.quote_prompt({ postfix = " --iglob " }),
             },
           },
         },
@@ -140,6 +151,7 @@ local M = {
     telescope.load_extension("heading")
     telescope.load_extension("ui-select")
     telescope.load_extension("make")
+    telescope.load_extension("live_grep_args")
     if settings.enable_noice then
       telescope.load_extension("noice")
     end
