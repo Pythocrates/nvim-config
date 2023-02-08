@@ -34,7 +34,7 @@ nls.setup({
         buffer = bufnr,
         callback = function()
           if AUTOFORMAT_ACTIVE then -- global var defined in functions.lua
-            vim.lsp.buf.format({ bufnr = bufnr })
+            vim.lsp.buf.format({ bufnr = bufnr, timeout_ms = 10000 })
           end
         end,
       })
