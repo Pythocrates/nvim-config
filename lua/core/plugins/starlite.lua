@@ -5,8 +5,9 @@ local M = {
     local default_options = { silent = true }
     map("n", "*", ":lua require'starlite'.star()<cr>", default_options)
     map("n", "g*", ":lua require'starlite'.g_star()<cr>", default_options)
-    map("n", "#", ":lua require'starlite'.hash()<cr>", default_options)
-    map("n", "g#", ":lua require'starlite'.g_hash()<cr>", default_options)
+    -- These two were going forwards, not sure why...
+    -- map("n", "#", ":lua require'starlite'.hash()<cr>", default_options)
+    -- map("n", "g#", ":lua require'starlite'.g_hash()<cr>", default_options)
   end,
 }
 
