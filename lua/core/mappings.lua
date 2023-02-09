@@ -1,10 +1,15 @@
 local map = vim.keymap.set
+local replace_key = require("core.utils.functions").replace_key
 local default_options = { silent = true }
 local expr_options = { expr = true, silent = true }
 
 --Remap for dealing with visual line wraps
 map("n", "k", "v:count == 0 ? 'gk' : 'k'", expr_options)
 map("n", "j", "v:count == 0 ? 'gj' : 'j'", expr_options)
+
+--Speed up the German keyboard
+replace_key("n", "ö", "[")
+replace_key("n", "ä", "]")
 
 -- better indenting
 map("v", "<", "<gv", default_options)

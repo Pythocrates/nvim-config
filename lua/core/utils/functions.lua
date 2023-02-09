@@ -112,4 +112,11 @@ M.get_config = function(name)
   return string.format('require("core.config.%s")', name)
 end
 
+M.replace_key = function(mode, old, new)
+  local feed_keys = function()
+    return vim.api.nvim_feedkeys(new, "m", false)
+  end
+  vim.keymap.set(mode, old, feed_keys)
+end
+
 return M
