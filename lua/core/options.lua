@@ -3,9 +3,10 @@ local utils = require("core.utils.functions")
 local o = vim.opt
 local fn = vim.fn
 
-if not settings.disable_winbar then
-  o.winbar = "%{%v:lua.require'core.utils.winbar'.get_winbar()%}"
-end
+--if not settings.disable_winbar then
+--  o.winbar = "%{%v:lua.require'core.utils.winbar'.get_winbar()%}"
+--end
+require("lualine").setup()
 if settings.global_statusline then
   o.laststatus = 3
 else
