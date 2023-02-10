@@ -63,6 +63,7 @@ require("mason-tool-installer").setup({
     "stylua",
     -- Linter
     "eslint_d",
+    "flake8",
     "shellcheck",
     "tflint",
     "vale",

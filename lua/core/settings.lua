@@ -83,6 +83,7 @@ M.mason_tool_installer_ensure_installed = {
   "shfmt",
   -- Linter
   "eslint_d",
+  "flake8",
   "shellcheck",
   "tflint",
   "yamllint",
