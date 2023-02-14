@@ -20,7 +20,7 @@ nls.setup({
     }),
     nls.builtins.code_actions.shellcheck,
     nls.builtins.code_actions.gitsigns,
-    nls.builtins.formatting.shfmt,
+    nls.builtins.formatting.shfmt.with({ extra_args = { "-i", 4 } }),
   },
   on_attach = function(client, bufnr)
     local wk = require("which-key")
