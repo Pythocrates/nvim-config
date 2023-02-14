@@ -3,10 +3,9 @@ local M = {
   config = function()
     require("mason-null-ls").setup({
       automatic_installation = true,
-      automatic_setup = true,
+      automatic_setup = false,
       ensure_installed = nil,
     })
-    require("mason-null-ls").setup_handlers()
   end,
 }
 
