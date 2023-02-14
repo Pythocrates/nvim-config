@@ -1,4 +1,3 @@
--- https://github.com/sumneko/lua-language-server/blob/master/locale/en-us/setting.lua
 local opts = {
   cmd = { "lua-language-server" },
   format = {
