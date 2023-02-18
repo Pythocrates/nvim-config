@@ -13,7 +13,7 @@ vim.opt.runtimepath:prepend(lazypath)
 
 -- Remap space as leader key
 -- Must be before lazy
-vim.keymap.set({ "n", "v" }, "<Space>", "<Nop>", { silent = true })
+--vim.keymap.set({ "n", "v" }, "<Space>", "<Nop>", { silent = true })
 vim.g.mapleader = " "
 
 require("lazy").setup("core.plugins", {
