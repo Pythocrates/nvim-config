@@ -10,7 +10,7 @@ nls.setup({
     }),
     nls.builtins.formatting.terraform_fmt,
     nls.builtins.formatting.black,
-    -- nls.builtins.formatting.isort,
+    nls.builtins.formatting.isort,
     nls.builtins.diagnostics.flake8,
     nls.builtins.formatting.taplo, -- for TOML
     nls.builtins.formatting.goimports,
