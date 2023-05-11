@@ -50,6 +50,7 @@ require("mason-tool-installer").setup({
     "dockerfile-language-server",
     "json-lsp",
     "marksman",
+    "rust-analyzer",
     "typescript-language-server",
     "texlab",
     "ltex-ls",

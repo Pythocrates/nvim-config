@@ -58,6 +58,7 @@ M.treesitter_ensure_installed = {
   "query",
   "python",
   "regex",
+  "rust",
   "toml",
   "vim",
   "yaml",
@@ -74,6 +75,7 @@ M.mason_tool_installer_ensure_installed = {
   "ltex-ls",
   "lua-language-server",
   "pyright",
+  "rust-analyzer",
   "terraform-ls",
   "yaml-language-server",
   -- Formatter

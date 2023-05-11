@@ -13,6 +13,7 @@ local servers = {
   "ltex",
   "marksman",
   "pyright",
+  "rust_analyzer",
   "lua_ls",
   "terraformls",
   "texlab",
@@ -39,6 +40,7 @@ for _, lsp in ipairs(servers) do
       redhat = { telemetry = { enabled = false } },
       texlab = languages.tex,
       yaml = languages.yaml,
+      rust = languages.rust,
     },
   })
 end
