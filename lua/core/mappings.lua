@@ -74,7 +74,7 @@ wk.register({
     f = { "<cmd>" .. require("core.utils.functions").telescope_find_files() .. "<cr>", "Find File" },
     g = { "<cmd>Telescope live_grep<cr>", "Live grep" },
     G = {
-      "<cmd>lua require('telescope').extensions.live_grep_args.live_grep_args({default_text='\"' .. vim.fn.expand('<cword>') .. '\"' .. ' -t' .. vim.fn.expand('%:e')})<cr>",
+      "<cmd>lua require('telescope').extensions.live_grep_args.live_grep_args({default_text='\"' .. vim.fn.expand('<cword>') .. '\"' .. ' --type-add \"curext:*.' .. vim.fn.expand('%:e') .. '\" -tcurext' })<cr>",
       "Live grep current word in current file type",
     },
     p = { "<cmd>Neotree reveal toggle<cr>", "Toggle Filetree" },
