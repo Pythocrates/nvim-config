@@ -11,7 +11,7 @@ local M = {
         "requirements.yml",
         "pyrightconfig.json",
         "pyproject.toml",
-        "Cargo.toml",
+        "Cargo.lock",
       },
       -- detection_methods = { "lsp", "pattern" },
       detection_methods = { "pattern" },
