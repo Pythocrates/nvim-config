@@ -24,6 +24,7 @@ nls.setup({
     nls.builtins.code_actions.gitsigns,
     nls.builtins.formatting.shfmt.with({ extra_args = { "-i", 4 } }),
   },
+  debug = true,
   on_attach = function(client, bufnr)
     local wk = require("which-key")
     local default_options = { silent = true }
