@@ -33,6 +33,11 @@ local opts = {
       fileMatch = { "*api*.json" },
       url = "https://raw.githubusercontent.com/OAI/OpenAPI-Specification/main/schemas/v3.1/schema.json",
     },
+    {
+      description = "JSON schema 2012",
+      fileMatch = { "*.schema" },
+      url = "https://json-schema.org/draft/2020-12/schema",
+    },
   },
 }
 
